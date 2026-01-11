@@ -91,7 +91,7 @@ const Navbar = () => {
               state ? "block" : "hidden"
             }`}
           >
-            <ul className="items-center space-y-4 md:flex md:space-x-8 md:space-y-0 text-[16px] font-semibold">
+            <ul className="items-center space-y-4 md:flex md:space-x-8 md:space-y-0 text-[18px] font-semibold">
               {navigation.map((item, idx) => {
                 return (
                   <li key={idx}>

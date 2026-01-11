@@ -1,8 +1,9 @@
 import React from 'react'
+import Faq from '../../components/faqs/Faq'
 
 const Faqs = () => {
   return (
-    <div className='min-h-screen'>Faqs</div>
+    <div><Faq /></div>
   )
 }
 
