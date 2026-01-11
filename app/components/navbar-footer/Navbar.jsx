@@ -87,11 +87,11 @@ const Navbar = () => {
             </div>
           </div>
           <div
-            className={`nav-menu flex-1 pb-3 mt-8 md:block md:pb-0 md:mt-0 ${
+            className={`nav-menu flex-1 pb-3 mt-0 md:block md:pb-0 md:mt-0 ${
               state ? "block" : "hidden"
             }`}
           >
-            <ul className="items-center space-y-4 md:flex md:space-x-8 md:space-y-0 text-[18px] font-semibold">
+            <ul className="items-center space-y-2 md:flex md:space-x-8 md:space-y-0 text-[14px] md:text-[18px] md:font-semibold">
               {navigation.map((item, idx) => {
                 return (
                   <li key={idx}>
@@ -136,12 +136,20 @@ const Navbar = () => {
                         )}
                       </button>
                     ) : (
+                      !state ?
                       <NavLink
                         href={item.path}
                         className="block "
                       >
                         {item.title}
                       </NavLink>
+                      : <a
+                        title={item.title}
+                        href={item.path}
+                        className="block "
+                      >
+                        {item.title}
+                      </a>
                     )}
                     {item.isDrapdown &&
                     drapdownState.idx == idx &&
@@ -197,7 +205,7 @@ const Navbar = () => {
                 <li>
                   <a
                     href="javascript:void(0)"
-                    className="block py-3 px-4 font-medium text-center text-white bg-indigo-600 hover:bg-indigo-500 active:bg-indigo-700 active:shadow-none rounded-lg shadow md:inline"
+                    className="block py-3 px-4 font-medium text-center text-white bg-indigo-800 hover:bg-indigo-500 active:bg-indigo-700 active:shadow-none rounded-lg shadow md:inline"
                   >
                     Sign in
                   </a>
