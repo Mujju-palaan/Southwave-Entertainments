@@ -1,15 +1,24 @@
 "use client";
 import { useEffect, useState } from "react";
-import dropdownNavs from '../../data/NavbarData'
+import dropdownNavs from "../../data/NavbarData";
 import Image from "next/image";
+import Link from "next/link";
 
 const Navbar = () => {
-    const navigation = [
-    {title: "Features",path: "javascript:void(0)",isDrapdown: true,navs: dropdownNavs,},
+  const navigation = [
+    { title: "Home", path: "/", isDrapdown: false },
+    {
+      title: "Features",
+      path: "javascript:void(0)",
+      isDrapdown: true,
+      navs: dropdownNavs,
+    },
     { title: "Events", path: "/events", isDrapdown: false },
     { title: "Service", path: "/service", isDrapdown: false },
+    { title: "About us", path: "/about", isDrapdown: false },
+
     { title: "Contact", path: "/contact", isDrapdown: false },
-    { title: "Support", path: "/support", isDrapdown: false },
+    // { title: "Support", path: "/support", isDrapdown: false },
     // { title: "Faq's", path: "/faqs", isDrapdown: false },
   ];
 
@@ -17,7 +26,7 @@ const Navbar = () => {
   const [drapdownState, setDrapdownState] = useState({
     isActive: false,
     idx: null,
-  });  
+  });
 
   useEffect(() => {
     document.onclick = (e) => {
@@ -36,14 +45,14 @@ const Navbar = () => {
       >
         <div className="items-center gap-14 px-4 max-w-screen-xl mx-auto md:flex md:px-8 md:text-[18px]">
           <div className="flex items-center justify-between py-3 md:py-5 md:block">
-            <a href="/home">
+            <Link href="/">
               <Image
-                src="/company/SOUTHWAVE ENTERTAINMENT"
-                width={80}
+                src="/company/logo-removebg.png"
+                width={120}
                 height={30}
                 alt="SOUTHWAVE ENTERTAINMENT"
               />
-            </a>
+            </Link>
             <div className="md:hidden">
               <button
                 className="text-white-500 hover:text-gray-800"

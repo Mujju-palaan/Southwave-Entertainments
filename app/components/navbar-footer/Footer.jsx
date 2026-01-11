@@ -10,13 +10,13 @@ const Footer = () => {
         <h2 id="footer-heading" className="sr-only">
           Footer
         </h2>
-        <div className="mx-auto max-w-screen-2xl px-6 lg:px-8 pt-10 md:pb-0 pb-4">
+        <div className="mx-auto max-w-screen-2xl px-6 lg:px-8 pt-10 md:pb-4 pb-4">
           <div className="xl:grid xl:grid-cols-3 xl:gap-8">
             <Image
-              src="/company/AF_logo.png"
-              alt="AF autogloss logo"
-              width={250}
-              height={250}
+              src="/company/logo-removebg.png"
+              alt="Southwave logo"
+              width={350}
+              height={350}
             //   className="h-auto w-auto"
             />
             <div className="mt-16 grid grid-cols-2 gap-8 xl:col-span-2 xl:mt-0">

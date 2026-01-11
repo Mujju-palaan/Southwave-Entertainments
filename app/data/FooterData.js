@@ -2,9 +2,9 @@
 
 export const navigation = {
   sale: [
-    { name: "Home", href: "/home" },
+    { name: "Home", href: "/" },
     { name: "Events", href: "/events" },
-    { name: "service", href: "/service" },
+    { name: "Service", href: "/service" },
     { name: "Register Discounts", href: "/comingsoon" },
   ],
   about: [
