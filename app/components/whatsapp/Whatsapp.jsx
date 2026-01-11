@@ -1,0 +1,34 @@
+'use client'
+import React from 'react'
+import { FloatingWhatsApp } from 'react-floating-whatsapp'
+
+const Whatsapp = () => {
+  return (
+    <div className="fixed bottom-6 right-6 z-50 flex justify-end items-end sm:bottom-8 sm:right-8">
+      <FloatingWhatsApp
+        phoneNumber="+44 7359658773"
+        accountName="Southwave Entertainments"
+        avatar="/company/AF.png" // ✅ Ensure this path is correct
+        statusMessage="Typically replies within 1hr"
+        chatMessage="Hello there! 🤝 How can we help?"
+        placeholder="Type a message.."
+        darkMode={false} // ✅ You can toggle this based on theme
+        allowClickAway={true}
+        allowEsc={false}
+        height={350}
+        notification={true}
+        notificationDelay={20}
+        notificationSound={true} // ✅ Optional
+        notificationLoop={false}
+        className="custom-whatsapp-chatbox"
+        styles={{
+          boxShadow: '0 4px 24px rgba(0,0,0,0.18)',
+          borderRadius: '18px',
+          overflow: 'hidden',
+        }}
+      />
+    </div>
+  )
+}
+
+export default Whatsapp
