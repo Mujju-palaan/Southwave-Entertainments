@@ -4,7 +4,7 @@ const Banner = () => {
   return (
     <div className="relative md:h-[420px] w-full overflow-hidden">
       <Image
-        src="/about.jpg"
+        src="/about/about-banner.jpg"
         className="h-full w-full md:object-cover object-contain rounded-xl"
         alt="About Us"
         width="800"

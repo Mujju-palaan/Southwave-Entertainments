@@ -11,6 +11,12 @@ const ContactDetails = () => {
     { icon: FaTelegramPlane, text: "Shoot us an email", href:"mailto:someone@example.com" },
     { icon: BsTwitterX, text: "Message us on X", href:'www.twitter.com' },
   ];
+  const contact = [
+    {name:'Company', phone:'+44 7359658773'},
+    {name:' Nithish kumar', phone:' +44 7774939820'},
+    {name:'Sathish Varma', phone:'+44 7440745814'},
+    {name:'Irshad Shaikh', phone:'+44 7907405166'},
+  ]
   return (
     <div className="flex flex-col gap-6 w-full sm:max-w-lg justify-center md:mt-0 mt-8">
       <div>
@@ -31,12 +37,17 @@ const ContactDetails = () => {
       <div>
         <h3 className="font-semibold md:text-2xl text-xl">Call us</h3>
         <p className="text-stone-500 md:text-sm text-sm">Call our team Mon-Fri from 8am to 5pm.</p>
-        <Link href="tel:+1-800-123-4567" className="flex gap-2 pt-2">
+        {contact.map((e, idx)=>(
+          <Link key={idx} href={`tel:${e.phone}`} className="flex gap-2 pt-2">
           <span className="md:text-xl text-lg">
             <FiPhoneCall />
           </span>
-          <span className="underline font-semibold md:text-sm text-sm">+44 7359658773</span>
+          <span className="md:text-sm text-sm flex gap-2">
+            <p className="underline font-semibold">{e.phone}</p>
+            <p className="text-stone-500">({e.name})</p></span>
         </Link>
+        ))}
+        
       </div>
 
       <div>
