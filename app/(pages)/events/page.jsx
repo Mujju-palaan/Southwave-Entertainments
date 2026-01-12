@@ -1,8 +1,10 @@
-import React from 'react'
+import BlogSwiper from '../../../components/blog/BlogSwiper'
 
 const Events = () => {
   return (
-    <div className='min-h-screen'>Events</div>
+    <div className="w-full flex flex-col items-center justify-center py-10 px-5">
+      <BlogSwiper />
+    </div>
   )
 }
 

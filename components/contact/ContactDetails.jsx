@@ -13,9 +13,9 @@ const ContactDetails = () => {
   ];
   const contact = [
     {name:'Company', phone:'+44 7359658773'},
-    {name:' Nithish kumar', phone:' +44 7774939820'},
-    {name:'Sathish Varma', phone:'+44 7440745814'},
-    {name:'Irshad Shaikh', phone:'+44 7907405166'},
+    // {name:' Nithish kumar', phone:' +44 7774939820'},
+    // {name:'Sathish Varma', phone:'+44 7440745814'},
+    // {name:'Irshad Shaikh', phone:'+44 7907405166'},
   ]
   return (
     <div className="flex flex-col gap-6 w-full sm:max-w-lg justify-center md:mt-0 mt-8">

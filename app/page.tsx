@@ -1,9 +1,9 @@
-import Image from "next/image";
+import BlogSwiper from '../components/blog/BlogSwiper'
 
 export default function Home() {
   return (
-    <div className="flex min-h-screen items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      mujju
+    <div className="w-full flex flex-col items-center justify-center py-10 px-5">
+      <BlogSwiper />
     </div>
   );
 }
