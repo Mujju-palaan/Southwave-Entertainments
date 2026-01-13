@@ -4,11 +4,11 @@ import { RiDoubleQuotesL } from "react-icons/ri";
 
 const OurStory = () => {
   return (
-    <div className="md:p-12 p-4">
+    <div className="lg:p-12 p-4">
       <h1 className="font-serif text-3xl sm:text-4xl md:text-6xl leading-tight p-2">
         Our Story, Vision, Values
       </h1>
-      <div className="md:flex xs:flex-col md:gap-12 gap-4 p-1">
+      <div className="md:flex xs:flex-col md:gap-4 lg:gap-10 gap-4 p-1">
         <div className=" md:text-lg text-sm">
           <div className="md:text-2xl">
             <RiDoubleQuotesL />
@@ -31,15 +31,15 @@ const OurStory = () => {
           </div>
         </div>
 
-        <div className="bg-indigo-500 text-amber-50 md:text-lg text-[12px] md:p-10 rounded-xl 
-            md:block hidden w-full p-4 ">
-          <span className="flex flex-row-reverse text-cyan-300 md:text-4xl font-serif 
-          font-semibold text-end md:pb-6">
-            <h1>ABOUT US</h1>
+        <div className="bg-indigo-500 text-amber-50  lg:text-lg text-[12px] lg:p-10 md:p-8 p-4 rounded-xl 
+            md:block hidden w-full ">
+          <span className="flex flex-row-reverse text-cyan-300 text-md md:text-4xl font-serif 
+          font-semibold text-end lg:pb-6">
+            <h1 className="text-xl">ABOUT US</h1>
             {/* <MdPerson/> */}
           </span>
 
-          <p>
+          <p className="">
             We belive in the power of collaboration and creativity by partnering
             closely with our clients, we gain a deep understanding of their
             unique needs and goals, allows us to deliver customized solutions
@@ -48,7 +48,7 @@ const OurStory = () => {
             digital experiences.
           </p>
           <br />
-          <p>
+          <p className="">
             By staying ahed of the curve and embaracing the latest trends
             audiencetechnologies, we ensure that we provide cutting edges
             solutions that not only address current challenges but aslo

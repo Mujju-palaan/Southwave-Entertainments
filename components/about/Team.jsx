@@ -1,7 +1,9 @@
 import React from "react";
 import TeamCard from "./TeamCard";
+import TeamData from "../../app/data/TeamData";
 
 const Team = () => {
+  
   return (
     <div className="flex flex-col md:gap-8 gap-4">
       <div className="md:px-20 p-4 text-center flex flex-col gap-4">
@@ -15,26 +17,21 @@ const Team = () => {
       </div>
 
       <div className="flex flex-wrap gap-4 justify-center md:p-8 ">
-        <TeamCard
-          img={`/about/Nithish kumar siripuram.jpeg`}
-          name={`Nithish Kumar Siripuram`}
-          rank={`Founder`}
+        {TeamData.map((e)=>(
+          <TeamCard key={e.id}
+          img={e.image}
+          name={e.name}
+          rank={e.position}
+          instagram={e.instagram}
+          linkedin={e.linkedin}
+          phone={e.phone}
+          whatsapp={e.whatsapp}
+          mail={e.mail}
         />
-        <TeamCard
-          img={`/about/Sathish Varma.jpeg`}
-          name={`Sathish Varma`}
-          rank={`Co-Founder`}
-        />
-        <TeamCard
-          img={`/about/Irshad-Shaik.jpeg`}
-          name={`Irshad Shaik`}
-          rank={`Co-Founder`}
-        />
-        {/* <TeamCard
-        img={`/about/Irshad Shaik.jpeg`}
-        name={`Irshad Shaik`}
-        rank={`Co-Founder`}
-      /> */}
+        ))}
+        
+        
+        
       </div>
 
     </div>

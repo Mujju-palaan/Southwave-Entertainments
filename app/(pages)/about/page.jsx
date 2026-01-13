@@ -12,7 +12,7 @@ const About = () => {
       <OurStory />
       <Team />
       {/* --------- Our Mission/Vision ------------- */}
-      <div className="md:flex xs:flex-col gap-12 justify-center">
+      <div className="md:flex xs:flex-col gap-12 justify-center md:m-4">
         <OurMission />
         <OurVision />
       </div>
