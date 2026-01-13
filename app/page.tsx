@@ -1,9 +1,15 @@
-import BlogSwiper from '../components/blog/BlogSwiper'
+import BlogSwiper from "../components/blog/BlogSwiper";
+import OngoingEvents from "../components/events/OngoingEvents";
 
 export default function Home() {
   return (
-    <div className="w-full flex flex-col items-center justify-center py-10 px-5">
-      <BlogSwiper />
+    <div className="">
+      <OngoingEvents />
+
+      <div>
+        <h1 className="font-serif md:text-5xl text-3xl text-left md:pl-12 px-8"> Blogs</h1>
+        <BlogSwiper />
+      </div>
     </div>
   );
 }

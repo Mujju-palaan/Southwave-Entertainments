@@ -15,7 +15,7 @@ import Image from "next/image";
 const BlogSwiper = () => {
   return (
     <Swiper
-      className="w-full flex"
+      className="w-[90%] flex m-4"
       modules={[Navigation, Pagination, A11y, Autoplay]}
       spaceBetween={10}
       slidesPerView={1}
@@ -36,11 +36,11 @@ const BlogSwiper = () => {
         <SwiperSlide key={data.id}>
           <Link
             href={`/blogs/${data.id}`}
-            className="md:m-8 mb-4 flex flex-col gap-2 rounded-xl cursor-pointer
-               md:p-4 shadow-lg transition-shadow duration-300"
+            className="md:m-8 mb-8 flex flex-col gap-2 rounded-xl cursor-pointer
+              border-b border-stone-300 p-4 shadow-lg transition-shadow duration-300"
           >
             {/* Image wrapper MUST have height */}
-            <div className="relative h-full w-full overflow-hidden rounded-xl">
+            <div className="relative overflow-hidden rounded-xl">
               <Image
                 src={data.image}
                 alt={data.venue}

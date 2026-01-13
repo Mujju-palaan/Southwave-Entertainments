@@ -103,7 +103,7 @@ const BlogData = [
     "name": "Dalston Superstore",
     "image": "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1200&q=80",
     "date": "2025-08-30",
-    "venue": "117 Kingsland High Street, London, UK",
+    "venue": "Kingsland High Street, London, UK",
     "description": "Dalston Superstore is a vibrant LGBTQ+ venue known for its eclectic music, inclusive atmosphere, themed nights, and late-night dance floors.",
     "categories": ["LGBTQ+", "Disco", "Nightlife"]
   }
