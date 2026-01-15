@@ -1,8 +1,11 @@
 import React from 'react'
+import PrivacyPolicyPage from '../../../components/policy'
 
 const Privacypolicy = () => {
   return (
-    <div className='min-h-screen'>Privacypolicy</div>
+    <div className='min-h-screen'>
+    <PrivacyPolicyPage />
+    </div>
   )
 }
 
