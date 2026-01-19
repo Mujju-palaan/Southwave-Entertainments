@@ -22,7 +22,7 @@ const GalleryHome = () => {
           <button
             key={tab.key}
             onClick={() => setActiveTab(tab.key)}
-            className={`px-5 py-3 rounded-2xl transition-all cursor-pointer
+            className={`md:px-5 p-2 md:py-3 rounded-2xl transition-all cursor-pointer font-semibold
               ${
                 activeTab === tab.key
                   ? "bg-primary text-white shadow-md"
@@ -37,18 +37,18 @@ const GalleryHome = () => {
 
       {/* Tab Content */}
       <div className="w-full max-w-6xl p-4">
-        <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
+        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-4 place-items-center">
           {GalleryData[activeTab].map((url, index) => (
             <div
               key={index}
-              className="relative h-[100px] w-full overflow-hidden rounded-lg"
+              className="relative aspect-square w-full max-w-[180px] overflow-hidden rounded-lg"
             >
               <Image
                 src={url}
                 alt={`${activeTab}-${index}`}
                 fill
                 className="object-cover"
-                sizes="(max-width: 768px) 100vw, 33vw"
+                sizes="(max-width: 640px) 50vw, (max-width: 768px) 33vw, 180px"
               />
             </div>
           ))}
@@ -58,4 +58,4 @@ const GalleryHome = () => {
   );
 };
 
-export default GalleryTabs;
+export default GalleryHome;

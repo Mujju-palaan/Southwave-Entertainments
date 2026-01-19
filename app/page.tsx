@@ -1,10 +1,10 @@
 import BlogSwiper from "../components/blog/BlogSwiper";
 import Event from "../components/events/Event";
-import OngoingEventsData from "./data/EventsOngoingData";
 import Status from "../components/home/Status";
 import Bannervideo from "../components/home/Bannervideo";
 import ServiceMenu from "../components/services/ServiceMenu";
 import Live from "../components/events/Live";
+import GalleryHome from '../components/gallery/GalleryHome'
 
 export default function Home() {
   return (
@@ -38,6 +38,8 @@ export default function Home() {
           </p>
         </div>
         <BlogSwiper />
+
+        <GalleryHome />
       </div>
     </div>
   );

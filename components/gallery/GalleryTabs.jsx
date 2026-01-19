@@ -22,7 +22,7 @@ const GalleryTabs = () => {
           <button
             key={tab.key}
             onClick={() => setActiveTab(tab.key)}
-            className={`px-5 py-3 rounded-2xl transition-all cursor-pointer
+            className={`md:px-5 p-2 md:py-3 rounded-2xl transition-all cursor-pointer
               ${
                 activeTab === tab.key
                   ? "bg-primary text-white shadow-md"
@@ -37,11 +37,11 @@ const GalleryTabs = () => {
 
       {/* Tab Content */}
       <div className="w-full max-w-6xl p-4">
-        <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
+        <div className="grid grid-cols-2 md:grid-cols-3 gap-4 place-items-center">
           {GalleryData[activeTab].map((url, index) => (
             <div
               key={index}
-              className="relative h-[200px] w-full overflow-hidden rounded-lg"
+              className="relative xs:aspect-square md:h-50 h-30 w-full xs:max-w-[180px] overflow-hidden rounded-lg"
             >
               <Image
                 src={url}
