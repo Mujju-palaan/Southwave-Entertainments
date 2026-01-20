@@ -25,7 +25,7 @@ const GalleryHome = () => {
             className={`md:px-5 p-2 md:py-3 rounded-2xl transition-all cursor-pointer font-semibold
               ${
                 activeTab === tab.key
-                  ? "bg-primary text-white shadow-md"
+                  ? "bg-indigo-600 text-white shadow-md"
                   : "bg-muted text-stone-700 hover:bg-accent"
               }
             `}

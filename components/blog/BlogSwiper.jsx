@@ -15,7 +15,7 @@ import Image from "next/image";
 const BlogSwiper = () => {
   return (
     <Swiper
-      className="w-[90%] flex m-4"
+      className="w-[85%] flex md:mt-0"
       modules={[Navigation, Pagination, A11y, Autoplay]}
       spaceBetween={10}
       slidesPerView={1}

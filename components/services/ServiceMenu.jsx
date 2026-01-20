@@ -7,8 +7,8 @@ const ServiceMenu = () => {
   return (
     <>
       <Heading_desc
-        heading={`Our Services`}
-        desc={`We’re a crew of strategists, creators, and marketers helping fearless brands break through the noise and shine with purpose.`}
+        title={`Our Services`}
+        description={`We’re a crew of strategists, creators, and marketers helping fearless brands break through the noise and shine with purpose.`}
       />
 
       <div className="md:flex xs:flex-col gap-6 items-center justify-center">
