@@ -6,7 +6,7 @@ const Contact = () => {
     <div
       className="md:m-8 mt-4 min-h-screen items-center justify-center bg-zinc-50 
       font-sans dark:bg-black object-contain"
-      style={{ backgroundImage: "url('/southwave-entertainment-events-contact-enquiry-call.jpg')" }}
+      style={{ backgroundImage: "url('/southwave-entertainment-contact-bg-image.png')" }}
     >
       <div>
         <h1 className="md:text-6xl text-2xl font-bold text-center text-stone-800">
