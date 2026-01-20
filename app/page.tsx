@@ -7,6 +7,7 @@ import Live from "../components/events/Live";
 import GalleryHome from "../components/gallery/GalleryHome";
 import Heading_desc from "@/components/Heading_desc";
 import LiveData from '../app/data/EventsOngoingData'
+import Testimonials from './(service)/testimonials/page'
 
 export default function Home() {
   return (
@@ -48,6 +49,8 @@ export default function Home() {
           description={`A snapshot of the energy, the crowd, and the moments that define our nights. Every frame captures the vibe, the movement, and the people who made it unforgettable.`}
         />
         <GalleryHome />
+
+        <Testimonials />
 
     </div>
   );

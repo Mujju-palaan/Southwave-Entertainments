@@ -3,7 +3,7 @@ import React from "react";
 const Testimonial = ({ avatar, name, title, quote }) => {
   return (
     <>
-      <div className="bg-gray-100 p-4 rounded-xl md:w-1/4 h-40 m-2">
+      <div className="bg-gray-100 p-4 rounded-xl md:w-1/4 h-auto m-2">
         <figure>
           <div className="flex items-center gap-x-4">
             <img src={avatar} className="w-16 h-16 rounded-full" />
