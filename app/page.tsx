@@ -15,7 +15,7 @@ export default function Home() {
       {/* ------------- Events  ------------- */}
       <Live
         heading={`Live Events`}
-        description={`In London our events have connected thousands across borders and cultures. Explore the moments we brought to life.`}
+        description={`From live performances to energetic crowd moments, our events are all about good music and great experiences. See what’s coming up and be part of the next one.`}
       />
 
       {/* <Event
@@ -36,14 +36,14 @@ export default function Home() {
       <div className="md:my-10">
         <Heading_desc
           title={`Blogs`}
-          description={`peoples who revied our events, who where satisfied with us`}
+          description={`Insights from the front row of nightlife—exploring DJ culture, live music, artists, and the craft behind unforgettable events.`}
         />
         <BlogSwiper />
       </div>
 
         <Heading_desc
           title={`Partiers gallery`}
-          description={`When the city’s hottest faces come out to party, you know it’s our event. These are the moments that define our events.`}
+          description={`A snapshot of the energy, the crowd, and the moments that define our nights. Every frame captures the vibe, the movement, and the people who made it unforgettable.`}
         />
         <GalleryHome />
 

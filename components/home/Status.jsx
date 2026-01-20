@@ -68,7 +68,7 @@ export default function Status() {
   return (
     <div className="relative md:h-[420px] w-full overflow-hidden">
       <Image
-        src="https://images.unsplash.com/photo-1581245869344-f9915e401773?w=870&auto=format&fit=crop"
+        src="/home/southwave-entertainment-events-status.jpg"
         alt="About Us"
         width={800}
         height={420}

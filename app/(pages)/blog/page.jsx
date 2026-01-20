@@ -9,7 +9,7 @@ const Blog = () => {
       <div>
         <Heading_desc
           title={`Blogs`}
-          description={`Explore the latest in elite entertainment, immersive DJ nights, and luxury event experiences. Southwave Entertainment brings you behind-the-scenes insights and expert tips from the world of high-profile events`}
+          description={`Insights from the front row of nightlife—exploring DJ culture, live music, artists, and the craft behind unforgettable events.`}
         />
       </div>
       <div className="flex flex-wrap justify-center items-center">

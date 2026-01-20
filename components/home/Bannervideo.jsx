@@ -7,7 +7,7 @@ const Bannervideo = () => {
     <div className="relative w-full h-screen overflow-hidden">
       {/* Video */}
       <video
-        src="/homevideo.mp4"
+        src="/southwave-entertainment-home-party-video.mp4"
         autoPlay
         loop
         muted
