@@ -1,7 +1,7 @@
 'use client'
 import Image from 'next/image'
 import { Container } from './container';
-import backgroundImage from '@/public/background-faqs.jpg'
+import backgroundImage from '@/public/southwave-entertainment-faqs-answers.jpg'
 import {useState} from 'react';
 import {ChevronUpIcon, ChevronDownIcon} from 'lucide-react';
 import FaqsData from "../../app/data/FaqsData"
