@@ -23,11 +23,11 @@ const Bannervideo = () => {
         <div className="flex flex-col gap-6 text-white text-4xl font-bold tracking-wide font-sans">
           <p className=" md:text-lg text-xs">VIBE – THRILL – REPEAT</p>
           <h1 className="md:text-4xl text-2xl md:pr-100">
-            The first-ever London boat party to have the iconic Tower Bridge
-            lift exclusively for our event.
+            We Create Powerful Music-Driven Events That Bring People Together
+            Through Sound, Energy and Experience 
           </h1>
           <h3 className="md:text-2xl text-sm">
-            Your next unforgettable night starts with us
+            — Like No One Else Ever Does
           </h3>
           <div>
             {" "}

@@ -1,7 +1,7 @@
 
 const dropdownNavs = [
   {
-    label: "Products",
+    label: "Events",
     navs: [
       {
         title: "Analytics",
@@ -46,7 +46,7 @@ const dropdownNavs = [
     navs: [
       {
         title: "Blog",
-        desc: "Duis aute irure dolor in reprehenderit",
+        desc: "Explore the elite entertainment experiences",
         path: "/blog",
         icon: (
           <svg
@@ -60,9 +60,9 @@ const dropdownNavs = [
         ),
       },
       {
-        title: "Community",
-        desc: "Duis aute irure dolor in reprehenderit",
-        path: "/comingsoon",
+        title: "Testimonials",
+        desc: "Hear from our clients and guests",
+        path: "/testimonials",
         icon: (
           <svg
             xmlns="http://www.w3.org/2000/svg"
