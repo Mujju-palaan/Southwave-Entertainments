@@ -76,7 +76,7 @@ export default function ContactForm() {
 
   return (
     // ---------min or max -----------
-    <Card className="sm:min-w-sm w-full md:m-2">
+    <Card className="md:w-[80%] w-[90%] mt-10">
       {/* <CardHeader>
         <CardTitle>Support</CardTitle>
         <CardDescription>

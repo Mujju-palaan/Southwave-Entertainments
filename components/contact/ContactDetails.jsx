@@ -7,9 +7,9 @@ import Link from "next/link";
 
 const ContactDetails = () => {
   const service = [
-    { icon: FaWhatsapp, text: "Live Chat on WhatsApp", href:'https://wa.me/YOUR_PHONE_NUMBER' },
-    { icon: FaTelegramPlane, text: "Shoot us an email", href:"mailto:someone@example.com" },
-    { icon: BsTwitterX, text: "Message us on X", href:'www.twitter.com' },
+    { icon: FaWhatsapp, text: "Live Chat on WhatsApp", href:'https://wa.me/447359658773' },
+    { icon: FaTelegramPlane, text: "Shoot us an email", href:"mailto:info@southwaveentertainment.com" },
+    { icon: BsTwitterX, text: "Message us on X", href:'www.twitter.com/southwaveentertainment' },
   ];
   const contact = [
     {name:'Company', phone:'+44 7359658773'},

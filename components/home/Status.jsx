@@ -76,10 +76,11 @@ export default function Status() {
         priority
       />
 
-      <div className="absolute inset-0 flex items-center justify-around bg-black/30 text-white/90 text-center font-sans tracking-widest text-sm md:text-3xl font-semibold">
+      <div className="absolute inset-0 flex gap-3 items-center justify-around bg-black/30 
+      text-white/90 text-center font-sans tracking-widest text-sm md:text-3xl font-semibold">
         <StatItem to={100} suffix="+" label="Events Organised" />
         <StatItem to={100} suffix="%" label="Clients Satisfied" delay={0.1} />
-        <StatItem to={60} suffix="+" label="Dance Floors" delay={0.2} />
+        <StatItem to={60} suffix="+" label="Dance Floors" delay={0.1} />
       </div>
     </div>
   );
