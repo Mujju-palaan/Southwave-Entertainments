@@ -25,7 +25,7 @@ const ContactDetails = () => {
           Speak to our friendly team via live chat.
         </p>
         {service.map(({ icon: Icon, text, href }, idx) => (
-          <Link href={href} className="flex gap-2 pt-2 " key={idx}>
+          <Link href={href} target='_blank' className="flex gap-2 pt-2 " key={idx}>
             <span className="md:text-xl text-lg">
               <Icon />
             </span>
@@ -53,7 +53,7 @@ const ContactDetails = () => {
       <div>
         <h3 className="font-semibold md:text-2xl text-xl">Visit us</h3>
         <p className="text-stone-500 md:text-sm text-sm">Chat to us in person at our London HQ.</p>
-        <Link href="https://www.googlemaps.com" className="flex gap-2 pt-2">
+        <Link href="https://maps.app.goo.gl/AWHuzL5WxcmWrruT6" target="_blank" className="flex gap-2 pt-2">
           <span className="md:text-xl text-lg">
             <MdLocationPin />
           </span>
