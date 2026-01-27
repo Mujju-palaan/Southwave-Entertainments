@@ -22,7 +22,7 @@ export default function Home() {
             From live performances to energetic crowd moments, our events are
             all about good music and great experiences. See what’s coming up and
             be part of the next one. <br />{" "}
-            <strong>Event booking available — click the poster to reserve your spot</strong>
+            <strong>Event booking available — 👇 click the poster to reserve your spot</strong>
           </>
         }
         Data={LiveData}

@@ -1,7 +1,7 @@
 const LiveData = [
   {
     id: 1,
-    "image": "/events/home/southwave-entertainment-home-live-events-dj-night-life-london-uk.jpeg"
+    "image": "/events/live/southwave-entertainmentlive-events-djNikz-night-life-london-uk.jpeg"
   },
   // {
   //   id: 2,
