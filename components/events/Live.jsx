@@ -12,44 +12,47 @@ const Live = ({ heading, description, Data }) => {
 
       {/* Image Animation */}
       <div className="flex justify-center">
-        <motion.div
-          initial={{
-            rotate: 0,
-            filter: "drop-shadow(0 0 0 rgba(99,102,241,0))",
-          }}
-          whileInView={{
-            rotate: [0, -1, 1, -1, 0],
-            filter: [
-              "drop-shadow(0 0 0 rgba(99,102,241,0))",
-              "drop-shadow(0 0 25px rgba(99,102,241,0.85))",
-              "drop-shadow(0 0 0 rgba(99,102,241,0))",
-            ],
-          }}
-          transition={{
-            duration: 0.8,
-            ease: "easeInOut",
-            repeat: Infinity,
-          }}
-          viewport={{
-            once: false, // set false if you want it every time it enters view
-            amount: 0.2, // triggers when 50% visible
-          }}
-          className="flex gap-8 items-center justify-center px-10"
-        >
+        <div className="flex gap-8 items-center justify-center px-10">
           {Data.map((i) => (
-            <Link key={i.id}
-            href={`https://www.fatsoma.com/e/sk27fua9/tolly-wave-night-london`}
-            target="_blank">
-            <Image
-              src={i.image}
-              width={300}
-              height={300}
-              alt={i.image}
-              className="rounded-xl"
-            />
-            </Link>
+            <motion.div
+              key={i.id}
+              initial={{
+                rotate: 0,
+                filter: "drop-shadow(0 0 0 rgba(99,102,241,0))",
+              }}
+              whileInView={{
+                rotate: [0, -1, 1, -1, 0],
+                filter: [
+                  "drop-shadow(0 0 0 rgba(99,102,241,0))",
+                  "drop-shadow(0 0 25px rgba(99,102,241,0.85))",
+                  "drop-shadow(0 0 0 rgba(99,102,241,0))",
+                ],
+              }}
+              transition={{
+                duration: 0.8,
+                ease: "easeInOut",
+                repeat: Infinity,
+              }}
+              viewport={{
+                once: false, // set false if you want it every time it enters view
+                amount: 0.2, // triggers when 50% visible
+              }}
+            >
+              <Link
+                href={`https://www.fatsoma.com/e/sk27fua9/tolly-wave-night-london`}
+                target="_blank"
+              >
+                <Image
+                  src={i.image}
+                  width={300}
+                  height={300}
+                  alt={i.image}
+                  className="rounded-xl"
+                />
+              </Link>
+            </motion.div>
           ))}
-        </motion.div>
+        </div>
       </div>
     </div>
   );
